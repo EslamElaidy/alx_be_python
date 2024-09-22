@@ -1,6 +1,4 @@
-number = input("Enter a number to see its multiplication table:")
-Y_list = (1,10)
+number = int(input("Enter a number to see its multiplication table: "))
+Y_list = range(1, 11)
 for y in Y_list:
-  print(number * y)
-  print ()
-
+    print(f"{number} x {y} = {number * y}")
