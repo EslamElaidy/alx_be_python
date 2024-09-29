@@ -12,16 +12,19 @@ def main():
         choice = input("Enter your choice: ")
 
         if choice == '1':
+            item = input("enter the item to add")
             # Prompt for and add an item
             shopping_list.append(item)
             print(f"{item} has been add")
-            pass
+            
         elif choice == '2':
+            item = input("enter the item to remove")
+            shopping_list.remove(item)
             # Prompt for and remove an item
-            pass
+            
         elif choice == '3':
             # Display the shopping list
-            pass
+            print(f{shopping_list}
         elif choice == '4':
             print("Goodbye!")
             break
