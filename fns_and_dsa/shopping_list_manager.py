@@ -9,16 +9,14 @@ def main():
     shopping_list = []
     while True:
         display_menu()
-        choice = (input("Enter your choice: ")
-
+        choice = input("Enter your choice: ")
+        item = input("add the item")
         if choice == "1":
-            item = input("add the item name")
             # Prompt for and add an item
             shopping_list.append(item)
             print(f"{item} has been add")
             
         elif choice == "2":
-            item = input("enter the item to remove")
             if item in shopping_list:
                 shopping_list.remove(item)
                 print(f"{item} has been removed")
