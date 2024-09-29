@@ -23,7 +23,7 @@ def main():
                 shopping_list.remove(item)
                 print(f"{item} has been removed")
             else:
-                print(f"{item} is not in the list")
+                print("the item is not found")
             # Prompt for and remove an item
             
         elif choice == '3':
