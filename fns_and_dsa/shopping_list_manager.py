@@ -18,16 +18,13 @@ def main():
             print(f"{item} has been add")
             
         elif choice == '2':
-            if item in shopping_list:
-                shopping_list.remove(item)
-                print(f"'{item}' has been removed from the list.")
-            else:
-                print(f"'{item}' is not in the list.")
+            item = input("enter the item to remove")
+            shopping_list.remove(item)
+            # Prompt for and remove an item
+            
         elif choice == '3':
-            if shopping_list:
-                print("\nYour Shopping List:")
-                for idx, item in enumerate(shopping_list, start=1):
-                    print(f"{idx}. {item}")
+            # Display the shopping list
+            print(f{shopping_list}
         elif choice == '4':
             print("Goodbye!")
             break
