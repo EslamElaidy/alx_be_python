@@ -6,9 +6,9 @@ def perform_operation(num1, num2, operation):
   elif operation == "multiply":
       return num1 * num2
   elif opertaion == "divide":
-      if num2 != 0:
-        return num1 / num2
+      while num2 == 0:
+        num2 = int(input("print a valid number")
       else:
-        print("this is not valid")
+        return num1 / num2
   else:
     return "invalid operation"
