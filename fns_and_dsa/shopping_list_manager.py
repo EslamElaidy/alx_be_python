@@ -9,14 +9,13 @@ def main():
     shopping_list = []
     while True:
         display_menu()
-        try:
-            choice = int(input("Enter your choice: "))
-        if choice == '1':
+        choice = int(input("Enter your choice: "))
+        if choice == 1:
             item = input("add the item name")
             shopping_list.append(item)
             print(f"{item} has been add")
             
-        elif choice == '2':
+        elif choice == 2:
             item = input("enter the item to remove")
             if item in shopping_list:
                 shopping_list.remove(item)
@@ -24,9 +23,9 @@ def main():
             else:
                 print("the item is not found")
             
-        elif choice == '3':
+        elif choice == 3:
             print(f"your shopping list is: {shopping_list}")
-        elif choice == '4':
+        elif choice == 4:
             print("Goodbye!")
             break
         else:
