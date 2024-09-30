@@ -24,7 +24,7 @@ def main():
                 print("the item is not found")
             
         elif choice == 3:
-            print(f"your shopping list is: {shopping_list}")
+            print(f"your shopping list is: [shopping_list]")
         elif choice == 4:
             print("Goodbye!")
             break
