@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 def display_current_datetime()
-current_date = datetime.now()
-print(current_date_
+current_date = datetime.now.strftime("%H:%M:%S")
+print(current_date)
 days = int(input("enter number of days"))
 def calculate_future_date()
   added_days = timedelta(days)
