@@ -13,4 +13,4 @@ elif temp_unit == "F":
     temp_in_F = convert_to_fahrenheit(temp)
     print(f"{temp_in_F}")
 else:
-    print("Invalid input")
+    print("Invalid temperature. Please enter a numeric value.")
