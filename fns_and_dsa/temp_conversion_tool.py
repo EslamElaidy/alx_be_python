@@ -4,5 +4,5 @@ def convert_to_celsius(fahrenheit):
   celsius = fahrenheit * 5/9
 def convert_to_fahrenheit(celsius):
   fahrenheit = celsius * 9/5
-temp_unit = int(input("press 1 for c and 2 for f"))
-temp = int(input("Enter your degree"))
+temp_unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ")
+temp = int(input("Enter the temperature to convert: "))
