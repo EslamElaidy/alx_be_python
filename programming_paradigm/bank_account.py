@@ -9,6 +9,12 @@ class BankAccount:
     else:
       print("invalid value")
   def withdraw(self,amount):
-    if amount > 0 and amount <= account_balance
-    self.account_balance -= amount
-    print (f"your balance is {amount}")
+    if amount > 0 and amount <= account_balance:
+      self.account_balance -= amount
+      print (f"your balance is {amount}")
+      return True
+    else:
+      print("Invalid")
+      return False
+  def display_balance (self,amount):
+    print(f"the current balance is: {self.account_balance}")
