@@ -17,4 +17,4 @@ class BankAccount:
       print("Invalid")
       return False
   def display_balance (self,amount):
-    print(f"the current balance is: {self.account_balance}")
+    print(f"Current Balance: {self.account_balance}")
