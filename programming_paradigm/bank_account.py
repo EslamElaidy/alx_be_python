@@ -7,11 +7,11 @@ class BankAccount:
       self.account_balance += amount
     else:
       print("invalid value")
-  def withdraw(self, amount):
-       if amount <= self.account_balance:
-           self.account_balance -= amount
-           return True
-       else:
-           return False
+  def withdraw(self,amount):
+    if amount <= self.account_balance:
+      self.account_balance -= amount
+      return True
+    else:
+      return False
   def display_balance (self,amount):
     print(f"Current Balance: ${self.amount}")
