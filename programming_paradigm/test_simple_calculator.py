@@ -14,7 +14,7 @@ class TestSimpleCalculator(unittest.TestCase):
         # Add more assertions to thoroughly test the add method.
     def test_subtraction(self):
         self.assertEqual(self.calc.subtract(3,2),1)
-    def test_multiplying(self):
+    def test_multiplication(self):
         self.assertequal(self.calc.multiply(3,2),6)
     def test_division(self):
         self.assertrequal(self.calc.divide(6,2),3)
