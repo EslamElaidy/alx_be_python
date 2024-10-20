@@ -15,7 +15,7 @@ class EBook(Book):
         self.file_size = file_size  # Unique attribute for EBook
 
     def __str__(self):
-        return f"{super().__str__()} [EBook, File Size: {self.file_size}MB]"
+        return f"{super().__str__()} [EBook, File Size: {self.file_size}KB]"
 
 # Derived class - PrintBook
 class PrintBook(Book):
