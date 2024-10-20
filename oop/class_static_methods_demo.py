@@ -11,19 +11,19 @@ class Calculator:
     # Class Method: Multiplies two numbers
     @classmethod
     def multiply(cls, a, b):
-        # Accessing the class attribute calculation_type
-        print(f"Calculation Type: {cls.calculation_type}")
+        # Accessing the class attribute calculation_type with lowercase "type"
+        print(f"Calculation type: {cls.calculation_type}")
         return a * b
 
 # Main function to demonstrate usage
 def main():
     # Using the static method to add two numbers
     result_add = Calculator.add(10, 5)
-    print(f"The sum of 10 and 5 is: {result_add}")
+    print(f"The sum is: {result_add}")
 
     # Using the class method to multiply two numbers
     result_multiply = Calculator.multiply(10, 5)
-    print(f"The product of 10 and 5 is: {result_multiply}")
+    print(f"The product is: {result_multiply}")
 
 if __name__ == "__main__":
     main()
