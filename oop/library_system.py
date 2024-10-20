@@ -5,7 +5,7 @@ class Book:
         self.author = author
 
     def __str__(self):
-        return f"'{self.title}' by {self.author}"
+        return f"Book: {self.title} by {self.author}"
 
 # Derived class - EBook
 class EBook(Book):
@@ -15,7 +15,7 @@ class EBook(Book):
         self.file_size = file_size  # Unique attribute for EBook
 
     def __str__(self):
-        return f"{super().__str__()} [EBook, File Size: {self.file_size}KB]"
+        return f"EBook: {self.title} by {self.author}, File Size: {self.file_size}KB"
 
 # Derived class - PrintBook
 class PrintBook(Book):
@@ -25,7 +25,7 @@ class PrintBook(Book):
         self.page_count = page_count  # Unique attribute for PrintBook
 
     def __str__(self):
-        return f"{super().__str__()} [Print Book, Page Count: {self.page_count}]"
+        return f"PrintBook: {self.title} by {self.author}, Page Count: {self.page_count}"
 
 # Library class demonstrating composition
 class Library:
